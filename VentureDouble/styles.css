@@ -1,0 +1,1175 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Inter&family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk';
+}
+
+header {
+    background: #FDFDFF ;
+}
+.brand{
+   display: flex;
+   width: 15px;
+   height: 15px;
+   align-items: center;
+   gap: 16px;
+}
+.brand, img{
+    border-radius: 5px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.logo {
+    font-family:"Inter";
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic ;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: #333;
+    text-transform: uppercase;
+
+    
+}
+
+.nav-links {
+    display: flex;
+    margin-left: 1em;
+    list-style: none;
+    font-family: "Hanken Grotesk";
+    font-weight: 100;
+    font-size: 15px;
+    color: #8F95A3 ;
+    
+}
+.nav-links a:hover {
+    color: #313247;
+}
+.nav-links li {
+    padding: 0 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #8F95A3;
+    font-weight: normal;
+}
+
+.auth-buttons {
+    display: flex;
+    font-family: "Hanken Grotesk";
+    font-size: large;
+}
+
+button {
+    padding: 18px 28px;
+    margin-left: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sign-up {
+    background-color: #FDFDFF;
+    color: #8F95A3;
+    border-radius: 8px;
+}
+
+#login {
+    background-color: #4e92f3;
+    color: #FDFDFF;
+    border-radius: 8px;
+    
+}
+
+#login:hover {
+    background-color: #94b5e7;
+    color: white;
+}
+#sign-up:hover{
+    background-color: #cfd3de;
+    color:#FDFDFF;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    
+}
+
+.hero-content {
+   flex: 1;
+   padding-right: 20px;
+}
+.hero-content h1{
+    color: #313247;
+
+    /* Heading/H1 */
+    font-family: "Hanken Grotesk";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px; /* 117.188% */
+    position: relative;
+    left: 200px;
+    bottom: 15px;
+}
+.hero-content p {
+    color: #8F95A3;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/Body Text */
+    font-family: Inter;
+    font-size: 18px;
+    ont-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    position: relative;
+    left: 200px;
+}
+.hero-buttons{
+    position: relative;
+    left: 180px;
+    margin-top: 30px;
+}
+.explore-more {
+    font-family: "Hanken Grotesk";
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: #4e92f3;
+    color: #FDFDFF;
+    font-size: 18px;
+}
+.dest-btn {
+    font-family: "Hanken Grotesk";
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: #eeeef3;
+    color: #313247;
+    font-size: 18px;
+}
+.dest-btn:hover{
+  background-color: #8F95A3;
+  color: #FDFDFF
+}
+.pic-1 {
+    position: relative;
+    right: 200px
+}
+.container {
+    position: relative;
+    width: 100%; /* Adjust to the width of your landscape image */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  .review-container {
+    position: absolute;
+    top: 160px; /* Distance from the top of the container to the top of the review */
+    left: -70px; /* Distance from the left of the container to the left of the review */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 16px 35px 16px 16px; /* Padding inside the review container */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0px 62px 85px -22px rgba(175, 175, 175, 0.14), 0px 0px 19px 1px rgba(204, 204, 204, 0.15); /* Shadow effect */
+    max-width: 250px; /* Maximum width of the review container */
+    z-index: 10; /* Ensure the review container stacks above the background image */
+  }
+  
+  .user-photo {
+    width: 40px; /* Width of the user's photo */
+    height: 40px; /* Height of the user's photo */
+    border-radius: 50%; /* Circular photo */
+    margin-right: 10px; /* Space between photo and user info */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    margin: 0;
+    font-size: 18px; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 200;
+    font-family:"Hanken Grotesk";
+    line-height: 21.6px;
+  }
+  .rating_star {
+    width: 14px;
+    height: 14px;
+  }
+  .user-rating {
+    font-size: 0.8em; /* Adjust font size as needed */
+    color: #8F95A3; /* Dark gray text color */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pic-2 {
+    width: 373px;
+    height: 268px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 255px;
+    left: -165px;
+  }
+  .review-container2{
+    position: absolute;
+    top: 390px; /* Distance from the top of the container to the top of the review */
+    right: -10px; /* Distance from the left of the container to the left of the review */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 16px 35px 16px 16px; /* Padding inside the review container */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0px 62px 85px -22px rgba(175, 175, 175, 0.14), 0px 0px 19px 1px rgba(204, 204, 204, 0.15); /* Shadow effect */
+    max-width: 250px; /* Maximum width of the review container */
+    z-index: 10; /* Ensure the review container stacks above the background image */
+  }
+  .user-photo2 {
+    width: 40px; /* Width of the user's photo */
+    height: 40px; /* Height of the user's photo */
+    border-radius: 50%; /* Circular photo */
+    margin-right: 10px; /* Space between photo and user info */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  .features-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:auto;
+    background-color: #4e92f3;
+    padding: 20px;
+  }
+  
+  .feature-item {
+    text-align: center;
+    color: white;
+  }
+  
+  .feature-item .icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item .icon img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  .text {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .top-destination-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .text-content h5 {
+    color: #4e92f3; /* Adjust the color to match your design */
+    margin-bottom: 5px; /* Adjust spacing as needed */
+    text-transform: uppercase;
+    font-size: 14px; /* Adjust font-size as needed */
+    font-family: "Inter";
+    line-height: 120%;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .text-content h1 {
+    margin: 0;
+    font-size: 36px; /* Adjust font-size as needed */
+    color: #313247; /* Adjust the color to match your design */
+    font-family: "Hanken Grotesk";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 57.6px */
+    position: relative;
+    top: 10px;
+    
+
+  }
+  
+  .text-content p {
+    color: #8F95A3; /* Adjust the color to match your design */
+    font-size: 16px; /* Adjust font-size as needed */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    position: relative;
+    top: 15px
+  }
+  .text-content{
+    position: relative;
+    top:50px;
+    left: 300px;
+  }
+  .navigation-arrows button {
+    background-color: #fff; /* Adjust the button background color as needed */
+    border: none;
+    padding: 10px; /* Adjust padding as needed */
+    margin-left: 10px; /* Adjust spacing between buttons as needed */
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+  }
+  .previous-btn{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+
+    order-radius: 8px;
+    border: 1px solid var(--Primary-Color-Primary-Color, #4E92F3);
+  }
+  .next-btn {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    background: var(--Primary-Color-Primary-Color, #4E92F3);
+  }
+  
+  .navigation-arrows button img {
+    color: #313247;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Container for cards */
+  .cards-container {
+    position: relative;
+    top: 100px;
+    left: 300px;
+    display: flex;
+    gap: 24px; /* Space between cards */
+    align-items: flex-start; /* Aligns cards vertically */
+    padding: 20px 0; /* Padding on top and bottom of the container */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 282px;
+    padding: 20px 20px 30px 20px;
+    gap: 24px;
+    border-radius: 20px;
+    background: var(--Neutral-Color);
+    box-shadow: 0px 2px 54px 0px rgba(49, 49, 49, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0px 5px 65px 0px rgba(49, 49, 49, 0.25); /* Enhanced shadow for lifted effect */
+    cursor: pointer;
+  }
+  
+  /* Assuming you have variables for colors defined somewhere in your CSS */
+  :root {
+    --Accent-Color: #F2AC0D; /* Accent Color/Rating Color */
+    --Neutral-Color: #DFDFF; /* Neutral Color */
+    --Secondary-Color: #313247; /* Secondary Color */
+  }
+  
+  /* Additional elements inside the card */
+  .card-image {
+    width: 100%; /* Image takes the full width of the card */
+    height: auto; /* Keep the aspect ratio of the image */
+    border-radius: 16px; /* Slightly smaller radius for the image */
+    object-fit: cover; /* Cover the image box if it's an img tag */
+  }
+  
+  .card-title {
+    font-size: 1.2em; /* Font size for the title */
+    color:#313247;
+    font-weight: 150;
+  }
+  
+  .card-location {
+    font-size: 1em;
+    color: var(--Secondary-Color);
+  }
+  
+  .card-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between stars or rating number */
+  }
+  
+  .card-rating-star {
+    /* Styling for the star, possibly an SVG or a font icon */
+    color: var(--Accent-Color);
+  }
+  
+  .card-rating-number {
+    font-size: 1em;
+    color: #8F95A3;
+  }
+  
+  .destination-section {
+    text-align: center;
+    background-color: #F8fbff;
+    padding: 50px;
+    position: relative;
+    top: 245px;
+    display: flex;
+    height: 739px;
+    padding: 96px 120px 72px 120px;
+    justify-content: center;
+    align-items: center;
+
+}
+.dest-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  right: -500px;
+  top: 100px
+
+}
+.destination-section h5 {
+  color: var(--Primary-Color-Primary-Color, #4E92F3);
+  text-align: center;
+  
+  /* Heading/H4 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+}
+/* Heading styling */
+.destination-section h1 {
+    text-align:left;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #313247; /* Dark text for better contrast */
+    font-size: 42px;
+    font-weight: 500;
+    font-family: "Hanken Grotesk";
+    line-height: 120%;
+}
+/* Paragraph styling */
+.destination-section p {
+  text-align: left;
+  margin-bottom: 45px;
+  color: #8F95A3;
+  line-height: 32px;
+  font-weight: 400px;
+  font-family: "Inter";
+}
+
+/* Button styling */
+.destination-section button {
+  background-color: #4E92F3;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  position: relative;
+  right: 15px;
+  top: -20px;
+}
+
+.destination-section button:hover {
+  background-color: #0056b3;
+}
+.map-img{
+  width: 737.17px;
+  height: 749.438px;
+  flex-shrink: 0;
+  background: url(/Assets/maps.svg), lightgrey / 100% 100% no-repeat;
+  position: relative;
+  top: -8px;
+  left: -850px;
+}
+.choose-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #FDFDFF; /* Replace with the actual color from the screenshot */
+
+
+}
+
+.text-section {
+  max-width: 40%;
+  position: relative;
+  top: 245px;
+  right: -100px;
+}
+
+.text-section h2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+  color: #4e92f3;
+}
+
+.text-section h1 {
+  text-align:left;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #313247; /* Dark text for better contrast */
+    font-size: 42px;
+    font-weight: 500;
+    font-family: "Hanken Grotesk";
+    line-height: 120%;
+    position: relative;
+    top: 10px;
+}
+
+.text-section p {
+  text-align: left;
+  margin-bottom: 45px;
+  color: #8F95A3;
+  line-height: 32px;
+  font-weight: 400px;
+  font-family: "Inter";
+  position: relative;
+
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.stat h3 {
+  color: #4e92f3; /* Blue color for the numbers */
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.stat p {
+  color: #333333; /* Dark grey for the stat title */
+}
+
+.BN-btn {
+  background-color: #4e92f3; /* Blue background for button */
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners for the button */
+  transition: background-color 0.3s;
+  position: relative;
+  right: 15px;
+  top: -20px;
+
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.image-section {
+  /* Styles for the image section would go here */
+  max-width: 50%;
+}
+
+.background-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.review-container {
+  position: absolute;
+  top: 160px; /* Distance from the top of the container to the top of the review */
+  left: -70px; /* Distance from the left of the container to the left of the review */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px 35px 16px 16px; /* Padding inside the review container */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0px 62px 85px -22px rgba(175, 175, 175, 0.14), 0px 0px 19px 1px rgba(204, 204, 204, 0.15); /* Shadow effect */
+  max-width: 250px; /* Maximum width of the review container */
+  z-index: 10; /* Ensure the review container stacks above the background image */
+}
+
+.user-photo {
+  width: 40px; /* Width of the user's photo */
+  height: 40px; /* Height of the user's photo */
+  border-radius: 50%; /* Circular photo */
+  margin-right: 10px; /* Space between photo and user info */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 18px; /* Adjust font size as needed */
+  font-style: normal;
+  font-weight: 200;
+  font-family:"Hanken Grotesk";
+  line-height: 21.6px;
+}
+.rating_star {
+  width: 14px;
+  height: 14px;
+}
+.user-rating {
+  font-size: 0.8em; /* Adjust font size as needed */
+  color: #8F95A3; /* Dark gray text color */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pic-4 {
+  width: 373px;
+  height: 268px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 255px;
+  left: -165px;
+}
+.review-container2{
+  position: absolute;
+  top: 390px; /* Distance from the top of the container to the top of the review */
+  right: -10px; /* Distance from the left of the container to the left of the review */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px 35px 16px 16px; /* Padding inside the review container */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0px 62px 85px -22px rgba(175, 175, 175, 0.14), 0px 0px 19px 1px rgba(204, 204, 204, 0.15); /* Shadow effect */
+  max-width: 250px; /* Maximum width of the review container */
+  z-index: 10; /* Ensure the review container stacks above the background image */
+}
+.user-photo2 {
+  width: 40px; /* Width of the user's photo */
+  height: 40px; /* Height of the user's photo */
+  border-radius: 50%; /* Circular photo */
+  margin-right: 10px; /* Space between photo and user info */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+.container {
+    position: relative;
+    width: 100%; /* Adjust to the width of your landscape image */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  .review-container {
+    position: absolute;
+    top: 160px; /* Distance from the top of the container to the top of the review */
+    left: -70px; /* Distance from the left of the container to the left of the review */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 16px 35px 16px 16px; /* Padding inside the review container */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0px 62px 85px -22px rgba(175, 175, 175, 0.14), 0px 0px 19px 1px rgba(204, 204, 204, 0.15); /* Shadow effect */
+    max-width: 250px; /* Maximum width of the review container */
+    z-index: 10; /* Ensure the review container stacks above the background image */
+  }
+  
+  .user-photo {
+    width: 40px; /* Width of the user's photo */
+    height: 40px; /* Height of the user's photo */
+    border-radius: 50%; /* Circular photo */
+    margin-right: 10px; /* Space between photo and user info */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    margin: 0;
+    font-size: 18px; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 200;
+    font-family:"Hanken Grotesk";
+    line-height: 21.6px;
+  }
+  .rating_star {
+    width: 14px;
+    height: 14px;
+  }
+  .user-rating {
+    font-size: 0.8em; /* Adjust font size as needed */
+    color: #8F95A3; /* Dark gray text color */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pic-2 {
+    width: 373px;
+    height: 268px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 255px;
+    left: -165px;
+  }
+  .review-container2{
+    position: absolute;
+    top: 390px; /* Distance from the top of the container to the top of the review */
+    right: -10px; /* Distance from the left of the container to the left of the review */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 16px 35px 16px 16px; /* Padding inside the review container */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0px 62px 85px -22px rgba(175, 175, 175, 0.14), 0px 0px 19px 1px rgba(204, 204, 204, 0.15); /* Shadow effect */
+    max-width: 250px; /* Maximum width of the review container */
+    z-index: 10; /* Ensure the review container stacks above the background image */
+  }
+  .user-photo2 {
+    width: 40px; /* Width of the user's photo */
+    height: 40px; /* Height of the user's photo */
+    border-radius: 50%; /* Circular photo */
+    margin-right: 10px; /* Space between photo and user info */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  .hero-images2{
+    position: relative;
+    width: 100%;
+    top: 200px;
+  }
+  /* Base styles */
+.testimonial-section {
+  font-family: 'Arial', sans-serif; /* Replace with the font used in the design */
+  color: #333; /* Main text color */
+  background: #F8fbff; /* Background color of the testimonial section */
+  padding: 4rem 0; /* Top and bottom padding for the section */
+  position: relative;
+  top: 300px;
+}
+.testimonial-header h3{
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #4E92F3;
+
+}
+.testimonial-header h2 {
+  font-size: 2rem; /* Header font size */
+  color: #313247; /* Header text color */
+  margin-bottom: 1rem; /* Space below the header */
+  text-align: center; /* Center align the header */
+  font-family: "Hanken Grotesk";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 48px;
+
+}
+
+.testimonial-header p {
+  color: #8F95A3; /* Subheading text color */
+  text-align: center; /* Center align the subheading */
+  margin-bottom: 2rem; /* Space below the subheading */
+  line-height:120%;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.testimonial-card {
+  width: 300px; /* Adjust the width as needed */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing inside the card */
+  margin: 10px; /* Spacing between cards */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.testimonial-header2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Spacing between header and text */
+}
+
+.testimonial-avatar {
+  width: 50px; /* Avatar size */
+  height: 50px;
+  border-radius: 50%; /* Circle shape */
+  margin-right: 10px; /* Spacing between avatar and text */
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-size: 16px; /* Adjust as needed */
+  font-weight: bold; /* Bold font for the name */
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  font-family:"Hanken Grotesk";
+
+}
+
+.testimonial-rating {
+  font-size: 12px; /* Smaller font size for rating */
+  color: #8F95A3; /* Dark grey color */
+  line-height: 120%;
+}
+
+.testimonial-text {
+  color: var(--Text-Color-Text-Color, #8F95A3);
+
+  /* Text/Body Text Card */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: 0.25px;
+}
+
+.all-test-cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;  
+}
+  #about-us {
+    background-color: #FDFDFF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:600px;
+  }
+  
+  #about-us .container {
+    width: 1200px;
+    height: 447px;
+    flex-shrink: 0;
+    background-color: #4e92f3;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .abt-us-text{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    top: 140px;
+    left: 150px;
+  }
+  #about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FDFDFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    text-transform: uppercase;
+    gap: 8px;
+  }
+  #about-us h3 {
+    font-family: "Hanken Grotesk";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 57.6px */
+  }
+  #about-us p {
+    margin-bottom: 20px;
+    color: #FDFDFF;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 32px; /* 177.778% */
+
+  }
+  
+  #about-us .buttons .btn {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: flex-start;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    gap: 56px;
+    position: relative;
+    right: 10px;
+  }
+  
+  #about-us .buttons .btn.about {
+    background-color: #313247;
+    padding: 16px 32px;
+  }
+  
+  #about-us .buttons .btn.contact {
+    background-color: #4e92f3;
+    padding: 16px 32px;
+    border:1.5px solid #FDFDFF ;
+    border-radius: 8px;
+  }
+  #about-us .image-container {
+    flex: 1;
+    position: relative;
+    left: 600px;
+    top: -475px;
+  }
+  #about-us .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .footer {
+    background-color: #4E92F3;
+    color: white;
+    padding: 2rem 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: 1000px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-brand, .footer-nav, .footer-newsletter {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+  .footer-brand .brand-name{
+    display: inline;
+    position: relative;
+    left: 10px;
+    line-height: 120%;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .footer-brand p {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 32px;
+    font-style: normal;
+    opacity: 0.75;
+  }
+  .footer-column {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 14px; /* 87.5% */
+    opacity: 0.75;
+    width: 111px;
+    gap: 24px;
+  }
+  .footer h4{
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .footer-newsletter input[type=email] {
+    display: flex;
+    padding:18px 52px 18px 28px; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    border: none;
+    max-width: 200px;
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 14px;
+    line-spacing: 0.16px;
+    color: #8F95A3;
+    position: relative;
+    left: 10px
+  }
+  .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .footer-newsletter button {
+    display: flex;
+    padding: 18px 77px;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 14px;
+    position: relative;
+    right: 10px;
+
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-brand, .footer-nav, .footer-newsletter {
+      flex-basis: auto;
+    }
+    .footer-nav {
+      display: flex;
+    }
+    .footer-column {
+      flex-basis: calc(33.333% - 1rem);
+      margin-right: 1rem;
+    }
+    .footer-column:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  /* You might need to add more specific styles for other elements within the card */
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+/* If the buttons need individual styling, you can target them with their class */
+.explore-more, .test-btn {
+    display: inline;
+    margin-top: 20px; /* Spacing above the buttons */
+    margin-right: 10px; /* Spacing between buttons if needed */
+}
+
+
+.destination-highlight {
+    /* Placeholder for the image slider - you would typically use a JavaScript plugin or a CSS-only slider */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .nav-links, .auth-buttons {
+        display: none; /* Hide on smaller screens, would typically be shown in a hamburger menu */
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+
+/* Further styles and responsiveness can be added as needed */
